@@ -27,38 +27,24 @@
 
 
 ## Installation
-  - Go mod environment
-  ```shell script
-   1. Set GOMODULE on
-     		go env -w GO111MODULE="on"
-   2. Update code
-      After pulling the latest code, Goland will prompt you to detect Go Moudule. You need to click Enabled. Note: The following environment can be filled in or not. If necessary, fill in GOPROXY="https://proxy.golang.com.cn"
-   3. Change Go Proxy
-     		go env -w GOPROXY="https://proxy.golang.com.cn"
-      Then type in
-     		go env
-      To check status
-   4. Update go mod
-     		go mod tidy
-  ```
+1、Set GOMODULE on
 
-  -  Go dependencies
+```shell
+go env -w GO111MODULE="on"
+```
+
+2、Update code. After pulling the latest code, Goland will prompt you to detect Go Moudule. You need to click Enabled. Note: The following environment can be filled in or not.
+
+3、Change Go Proxy
+
+```shell
+go env -w GOPROXY="https://proxy.golang.com.cn"
+```
+
+4、Update go mod
 
   ```shell script
-    # go mod will automatically detect mod files and install dependencies
-    go get github.com/Hyperledger-TWGC/ccs-gm
-    go get github.com/JodeZer/mgop 
-    go get github.com/google/uuid 
-    go get github.com/karlseguin/ccache/v2 
-    go get github.com/larspensjo/config 
-    go get github.com/tinylib/msgp 
-    go get github.com/yudeguang/ratelimit 
-    go get gopkg.in/alexcesaro/quotedprintable.v3 
-    go get gopkg.in/check.v1 
-    go get gopkg.in/gomail.v2 
-    go get gopkg.in/mgo.v2 
-    go get gopkg.in/yaml.v2
-    ...... 
+  go mod tidy
   ```
 
 ## Instructions for use
